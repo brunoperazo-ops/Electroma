@@ -1,84 +1,197 @@
-<meta name="theme-color" content="#111111">
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Electroma - Servicio Técnico</title>
 
+<meta name="description" content="Servicio técnico electrónico en Apóstoles. Reparación de TV, electrodomésticos, computadoras y equipos electrónicos.">
+
+<meta name="theme-color" content="#0f1512">
+
+<meta property="og:title" content="Electroma - Servicio Técnico">
+<meta property="og:description" content="Reparación electrónica y electrodomésticos en Apóstoles.">
+<meta property="og:image" content="https://electroma.xyz/foto1.webp">
+<meta property="og:url" content="https://electroma.xyz">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="favicon.ico">
+
 <style>
+
+:root{
+--bg:#0f1512;
+--card:#16201b;
+--border:#284135;
+--text:#e8f1eb;
+--muted:#8ea296;
+--green:#4fd18b;
+--green2:#2ca06a;
+--copper:#b68d57;
+}
+
+*{
+box-sizing:border-box;
+}
+
 body{
 font-family:system-ui;
-background:#111;
-color:#eee;
+background:linear-gradient(to bottom,#0f1512,#111915);
+color:var(--text);
 margin:0;
 padding:20px;
-max-width:700px;
+max-width:720px;
 margin:auto;
-line-height:1.5;
+line-height:1.6;
+-webkit-font-smoothing:antialiased;
+}
+
+.container{
+padding-top:20px;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+margin-bottom:10px;
+}
+
+.logo-icon{
+width:42px;
+height:42px;
+border-radius:12px;
+background:linear-gradient(145deg,var(--green2),var(--green));
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:800;
+font-size:1.4rem;
+color:#07110b;
+box-shadow:0 0 18px rgba(79,209,139,0.15);
 }
 
 h1{
 font-size:2rem;
-margin-bottom:10px;
+margin:0;
+letter-spacing:-1px;
 }
 
-p{
-font-size:1rem;
+.subtitle{
+color:var(--muted);
+margin-top:6px;
+margin-bottom:28px;
 }
 
 .btn{
 display:block;
-background:#222;
-padding:14px;
-margin:12px 0;
+background:var(--card);
+padding:16px;
+margin:14px 0;
 text-decoration:none;
-color:white;
-border-radius:10px;
+color:var(--text);
+border-radius:16px;
 text-align:center;
-border:1px solid #333;
+border:1px solid var(--border);
+font-weight:600;
+transition:0.2s ease;
+}
+
+.btn:hover{
+border-color:var(--green);
+transform:translateY(-1px);
+}
+
+.btn.whatsapp{
+background:linear-gradient(145deg,#1d3b2d,#214d39);
+border-color:#2e7a54;
+}
+
+.btn.call{
+border-color:#4a5f55;
+}
+
+.btn.maps{
+border-color:#5f563e;
 }
 
 img{
 width:100%;
-border-radius:12px;
-margin-top:15px;
+border-radius:18px;
+margin-top:22px;
+border:1px solid var(--border);
 }
 
 .small{
-opacity:0.7;
+opacity:0.72;
 font-size:0.9rem;
-margin-top:30px;
+margin-top:34px;
+color:var(--muted);
+text-align:center;
 }
+
+.badge{
+display:inline-block;
+padding:6px 10px;
+border-radius:999px;
+background:#16201b;
+border:1px solid var(--border);
+font-size:0.82rem;
+color:var(--muted);
+margin-bottom:18px;
+}
+
 </style>
+
 </head>
 
 <body>
 
-<h1>Electroma</h1>
+<div class="container">
 
-<p>
-Servicio técnico electrónico en Apóstoles.
+<div class="badge">
+Servicio técnico local · Apóstoles
+</div>
+
+<div class="logo">
+
+<div class="logo-icon">
+E
+</div>
+
+<div>
+<h1>Electroma</h1>
+</div>
+
+</div>
+
+<p class="subtitle">
 Reparación de TV, electrodomésticos, computadoras y equipos electrónicos.
+Atención local con diagnóstico rápido y soluciones prácticas.
 </p>
 
-<a class="btn" href="https://wa.me/5493765074783">
+<a class="btn whatsapp" href="https://wa.me/5493765074783">
 WhatsApp
 </a>
 
-<a class="btn" href="tel:+543765074783">
+<a class="btn call" href="tel:+543765074783">
 Llamar
 </a>
 
-<a class="btn" href="https://maps.google.com">
+<a class="btn maps" href="https://maps.google.com">
 Ubicación
 </a>
 
-<img src="foto1.webp" alt="Servicio técnico">
+<img src="foto1.webp" alt="Servicio técnico Electroma">
 
 <p class="small">
 Sitio rápido y liviano optimizado para cualquier conexión.
 </p>
+
+</div>
 
 </body>
 </html>
